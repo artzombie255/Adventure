@@ -5,6 +5,7 @@ let currentNodeIdentifier = 0;
 function yes() {
     currentNodeIdentifier = nodes.find( (node) => node.id === currentNodeIdentifier).yesLink
     setMainContentToCurrentNode()
+    
 }
 function no() {
     currentNodeIdentifier = nodes.find((node) => node.id === currentNodeIdentifier).noLink
@@ -18,6 +19,9 @@ function setMainContentToCurrentNode() {
     document.body.style.backgroundColor = currentNode.backgroundColor
     console.log(currentNode.backgroundColor)
 }
+
+
+
 // this is an array of nodes
 const nodes = [
     {
@@ -122,7 +126,7 @@ const nodes = [
         id: 11,
         description: "If you want to keep your job you will find my father's killer and end him",
         description2: "{do you accept this quest?}",
-        yesLink: 0,
+        yesLink: 15,
         noLink: 12,
         backgroundColor: "#fff"
 
@@ -149,15 +153,16 @@ const nodes = [
         id: 14,
         description: "I would advise you to reconsider. If you don't want to take this quest then you will be banished for failing to protect the king",
         description2: "{will you reconsider?}",
-        yesLink: 0,
+        yesLink: 15,
         noLink: 12,
         backgroundColor: "#fff"
 
     },
     {
         id: 15,
-        description: "why did you choose no?",
+        description: "Great, we will supply you with some gold and my seal so you can get help. Good luck on your journey.",
         description2: "",
+        gold: gold + 10,
         yesLink: 0,
         noLink: 0,
         backgroundColor: "#fff"
