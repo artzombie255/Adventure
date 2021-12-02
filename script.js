@@ -3,9 +3,9 @@ let currentNodeIdentifier = 0;
 
 
 function yes() {
-    currentNodeIdentifier = nodes.find( (node) => node.id === currentNodeIdentifier).yesLink
+    currentNodeIdentifier = nodes.find((node) => node.id === currentNodeIdentifier).yesLink
     setMainContentToCurrentNode()
-    
+
 }
 function no() {
     currentNodeIdentifier = nodes.find((node) => node.id === currentNodeIdentifier).noLink
@@ -13,7 +13,7 @@ function no() {
 }
 
 function setMainContentToCurrentNode() {
-    const currentNode = nodes.find( (node) => node.id === currentNodeIdentifier)
+    const currentNode = nodes.find((node) => node.id === currentNodeIdentifier)
     document.getElementById("mainContent").innerHTML = currentNode.description
     document.getElementById("secondaryContent").innerHTML = currentNode.description2
     document.body.style.backgroundColor = currentNode.backgroundColor
@@ -162,25 +162,24 @@ const nodes = [
         id: 15,
         description: "Great, we will supply you with some gold and my seal so you can get help. Good luck on your journey.",
         description2: "",
-        gold: gold + 10,
-        yesLink: 0,
-        noLink: 0,
+        yesLink: 16,
+        noLink: 15,
         backgroundColor: "#fff"
 
     },
     {
         id: 16,
-        description: "why did you choose no?",
-        description2: "",
-        yesLink: 0,
-        noLink: 0,
+        description: "[you leave the castle and head out on the road. The king gave you the a crossbow bolt the assasin used to take out the guards in the towers] ",
+        description2: "{Do you go to Aswen(yes), or Etrya(no)",
+        yesLink: 17,
+        noLink: 1,
         backgroundColor: "#fff"
 
     },
     {
         id: 17,
-        description: "why did you choose no?",
-        description2: "",
+        description: "[you go to Aswen]",
+        description2: "{Do you want to go to the market(yes), or the castle(no)}",
         yesLink: 0,
         noLink: 0,
         backgroundColor: "#fff"
@@ -214,7 +213,7 @@ const nodes = [
 
     },
     {
-        id: 20,
+        id: 21,
         description: "why did you choose no?",
         description2: "",
         yesLink: 0,
@@ -222,7 +221,317 @@ const nodes = [
         backgroundColor: "#fff"
 
     },
-    
-    
-    
+    {
+        id: 22,
+        description: "why did you choose no?",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 23,
+        description: "why did you choose no?",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 24,
+        description: "why did you choose no?",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 25,
+        description: "why did you choose no?",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 26,
+        description: "why did you choose no?",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 27,
+        description: "why did you choose no?",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 28,
+        description: "why did you choose no?",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 29,
+        description: "why did you choose no?",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 30,
+        description: "why did you choose no?",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 31,
+        description: "why did you choose no?",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 32,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 33,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 34,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 35,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 36,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 37,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 38,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 39,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 40,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 41,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 42,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 43,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 44,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 45,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 46,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 47,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 48,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 49,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 50,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 51,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 52,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 53,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 54,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+    {
+        id: 55,
+        description: "",
+        description2: "",
+        yesLink: 0,
+        noLink: 0,
+        backgroundColor: "#fff"
+
+    },
+
+
+
+
+
+
+
 ]
